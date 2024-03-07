@@ -4,7 +4,7 @@ on:
 
 jobs:
   demo-environments:
-    runs-on: macos-latest:
+    runs-on: macos-latest
     env:
       public_name: ${{vars.NAME}}
     
