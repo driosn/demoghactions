@@ -6,7 +6,9 @@ jobs:
   demo-environments:
     runs-on: macos-latest
     env:
-      public_name: ${{vars.NAME}}
+      public_name: ${{vars.VARIABLENAME}}
+      token: ${{secrets.SECRETNAME}}
     
     steps:
       - run: echo $public_name
+      - run: echo $token
