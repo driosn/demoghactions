@@ -10,5 +10,5 @@ jobs:
       token: ${{secrets.SECRETNAME}}
     
     steps:
-      - run: echo $public_name
+      - run: echo $test_variable
       - run: echo $token
